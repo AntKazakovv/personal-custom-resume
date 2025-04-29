@@ -1,0 +1,17 @@
+{
+  "name": "personal-custom-resume",
+  "version": "1.0.0",
+  "description": "My personal page",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "vite": "^6.3.3"
+  }
+}
