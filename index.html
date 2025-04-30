@@ -2,14 +2,28 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cascadia+Code:ital,wght@0,200..700;1,200..700&display=swap" rel="stylesheet">
     <title>Anton Kazakov Page</title>
     <link rel="stylesheet" href="./src/styles/profile.css"></link>
 </head>
 <body>
-    <div x-data="personalInfo">
-        <div class="">
-            <h1 x-text="fullName"></h1>
+    <div class="wrapper" x-data="personalInfo">
+        <div class="card">
+            <div class="card-image"></div>
+            <div class="card-footer">
+                <h1 x-text="fullName"></h1>
+            </div>
         </div>
+        <div>
+            <ul>
+                <li>Age: <span x-text="age"></span></li>
+                <li>Race: <span x-text="race"></span></li>
+                <li>Sex: <span x-text="sex"></span></li>
+            </ul> 
+        </div>
+
     </div>
     <script type="module" src="./src/main.js"></script>
 </body>

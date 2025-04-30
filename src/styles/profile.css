@@ -1,0 +1,21 @@
+body {
+    padding: 20px;
+    font-family: "Cascadia Code", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.card {
+    display: grid;
+    width: 350px;
+    height: 500px;
+    background: aquamarine;
+}
+
+.card-footer {
+}
+
+.wrapper {
+    display: flex;
+}
