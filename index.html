@@ -7,6 +7,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Cascadia+Code:ital,wght@0,200..700;1,200..700&display=swap" rel="stylesheet">
     <title>Anton Kazakov Page</title>
     <link rel="stylesheet" href="./src/styles/profile.css"></link>
+    <script src="https://cdn.jsdelivr.net/npm/eruda"></script> 
 </head>
 <body>
     <div class="wrapper" x-data="personalInfo">
@@ -16,15 +17,8 @@
                 <h1 x-text="fullName"></h1>
             </div>
         </div>
-        <div>
-            <ul>
-                <li>Age: <span x-text="age"></span></li>
-                <li>Race: <span x-text="race"></span></li>
-                <li>Sex: <span x-text="sex"></span></li>
-            </ul> 
-        </div>
-
+        <info-block title="Base" :listOfData="{age: age, sex: sex}"></info-block>
     </div>
-    <script type="module" src="./src/main.js"></script>
+    <script type="module" crossorigin src="./src/main.js"></script>
 </body>
 </html>

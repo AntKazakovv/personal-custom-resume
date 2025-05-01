@@ -19,3 +19,16 @@ body {
 .wrapper {
     display: flex;
 }
+
+.info-block__wrapper {
+    padding-left: 20px;
+}
+
+.basic-info_header {
+
+}
+
+.basic-info_list {
+    font-size: 16pt;
+    padding-left: 20px;
+}

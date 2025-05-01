@@ -1,5 +1,6 @@
 import alpinejs from "https://cdn.skypack.dev/alpinejs" 
-
+import { InfoBlock } from "./components/info-block.js";
+import { EnvironmentModuleGraph } from "vite";
 
 alpinejs.data('personalInfo', () => ({
     firstName: "Anton",
@@ -21,4 +22,6 @@ alpinejs.data('personalInfo', () => ({
     }
 }))
 
+eruda.init()
+customElements.define("info-block", InfoBlock);
 alpinejs.start();
