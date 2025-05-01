@@ -1,6 +1,5 @@
 import alpinejs from "https://cdn.skypack.dev/alpinejs" 
 import { InfoBlock } from "./components/info-block.js";
-import { EnvironmentModuleGraph } from "vite";
 
 alpinejs.data('personalInfo', () => ({
     firstName: "Anton",
@@ -8,7 +7,17 @@ alpinejs.data('personalInfo', () => ({
     birthday: [6, 1, 1997],
     race: "Human",
     sex: "Sexy",
-    
+
+    programming: ["Nodejs", "TypeScript", "Angular", "React", "Functional Programming"],
+    admin: ["Linux", "Docker"],
+
+    get baseInfo() {
+        return JSON.stringify({
+            race: this.race,
+            sex: this.sex,
+            age: this.age,
+        });
+    },
  
     get age() {
         const currentDate = new Date();
@@ -22,6 +31,5 @@ alpinejs.data('personalInfo', () => ({
     }
 }))
 
-eruda.init()
 customElements.define("info-block", InfoBlock);
 alpinejs.start();

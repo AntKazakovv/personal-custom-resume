@@ -32,3 +32,19 @@ body {
     font-size: 16pt;
     padding-left: 20px;
 }
+
+/* =========== */
+
+.a_fl-r {
+    display: flex;
+    flex-direction: row;
+}
+
+.a_fl-c {
+    display: flex;
+    flex-direction: column;
+}
+
+.a_fl-gap-10 {
+    gap: 10px;
+}
