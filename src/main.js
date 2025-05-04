@@ -18,11 +18,17 @@ alpinejs.data('personalInfo', () => ({
             age: this.age,
         });
     },
+
+    get skilsInfo() {
+        return JSON.stringify({
+            programming: this.programming,
+            admin: this.admin
+        });
+    },
  
     get age() {
         const currentDate = new Date();
         const currentYear = currentDate.getFullYear();
-        console.log(this.birthday);
         return currentYear - this.birthday[2];
     },
 

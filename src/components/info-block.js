@@ -20,8 +20,13 @@ export class InfoBlock extends AbstractComponent {
         return word[0].toUpperCase() + word.slice(1, word.length);
     }
 
+    arrayToListView(items) {
+        return items.map((item) => {
+            return `<li>${item}</li>`
+        })
+    }
+
     render() {        
-        console.table(this.data);
         if (this.isEmptyAttributtes()) return;
 
         this.innerHTML = `
@@ -29,8 +34,13 @@ export class InfoBlock extends AbstractComponent {
                 <div class="basic-info">
                     <h2 class="basic-info_header">${this.title}</h2>
                     <ul class="basic-info_list">`
-                        + Object.entries(this.data).map(([key, value]) => 
-                            `<li>${this.toUpperFirstLetter(key)}: ${value}</li>`).join(" ") +
+                        + Object.entries(this.data).map(([key, val]) => {
+                            const value = (typeof val === "object")
+                                ? `<ul>${this.arrayToListView(val).join("\n")}</ul>`
+                                : val;
+                            return `<li>${this.toUpperFirstLetter(key)}: ${value}</li>`;
+                        }).join(" ")
+                        + 
                     `</ul> 
                 </div>
                 <hr>

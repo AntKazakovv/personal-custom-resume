@@ -12,14 +12,16 @@
 <body>
     <div class="wrapper" x-data="personalInfo">
         <div class="card">
-            <div class="card-image"></div>
+            <div class="card-image">
+                <img width="300px" src="assets/page_avatar.jpg">
+            </div>
             <div class="card-footer">
                 <h1 x-text="fullName"></h1>
             </div>
         </div>
         <div class="a_fl-c a_fl-gap-10">
             <info-block title="Base" :data="baseInfo"></info-block>
-            <info-block title="Skills" :data="123"></info-block>
+            <info-block title="Skills" :data="skilsInfo"></info-block>
         </div>
     </div>
     <script type="module" crossorigin src="./src/main.js"></script>

@@ -1,50 +1,57 @@
 body {
-    padding: 20px;
-    font-family: "Cascadia Code", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 500;
-    font-style: normal;
+  padding: 20px;
+  font-family: "Cascadia Code", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+  background: #fff7f0;
+}
+
+.card-image {
+  margin: 21px;
 }
 
 .card {
-    display: grid;
-    width: 350px;
-    height: 500px;
-    background: aquamarine;
+  display: grid;
+  width: 350px;
+  height: 435px;
+  background: #fff;
+  box-shadow: -4px 5px 6px -3px rgba(0, 0, 0, 0.37);
+  -webkit-box-shadow: -4px 5px 6px -3px rgba(0, 0, 0, 0.37);
+  -moz-box-shadow: -4px 5px 6px -3px rgba(0, 0, 0, 0.37);
 }
 
 .card-footer {
+  margin-left: 21px;
 }
 
 .wrapper {
-    display: flex;
+  display: flex;
 }
 
 .info-block__wrapper {
-    padding-left: 20px;
+  padding-left: 20px;
 }
 
-.basic-info_header {
-
-}
+.basic-info_header {}
 
 .basic-info_list {
-    font-size: 16pt;
-    padding-left: 20px;
+  font-size: 16pt;
+  padding-left: 20px;
 }
 
 /* =========== */
 
 .a_fl-r {
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
 }
 
 .a_fl-c {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .a_fl-gap-10 {
-    gap: 10px;
+  gap: 10px;
 }
