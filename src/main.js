@@ -10,6 +10,7 @@ alpinejs.data('personalInfo', () => ({
 
     programming: ["Nodejs", "TypeScript", "Angular", "React", "Functional Programming"],
     admin: ["Linux", "Docker"],
+    art: ["Lomography", "3D modeling"],
 
     get baseInfo() {
         return JSON.stringify({
@@ -22,7 +23,8 @@ alpinejs.data('personalInfo', () => ({
     get skilsInfo() {
         return JSON.stringify({
             programming: this.programming,
-            admin: this.admin
+            admin: this.admin,
+            art: this.art,
         });
     },
  
