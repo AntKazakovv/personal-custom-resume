@@ -1,29 +1,91 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cascadia+Code:ital,wght@0,200..700;1,200..700&display=swap" rel="stylesheet">
-    <title>Anton Kazakov Page</title>
-    <link rel="stylesheet" href="./src/styles/profile.css"></link>
-    <script src="https://cdn.jsdelivr.net/npm/eruda"></script> 
+  <meta charset="UTF-8">
+  <title>Макет сайта</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+        font-family: "VT323", monospace;
+        font-weight: 400;
+        font-style: normal;
+    font-size: 18pt;
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: 1fr 2fr; /* Левая колонка уже, правая шире */
+      grid-template-rows: 1fr 1fr;
+      gap: 20px;
+      background-color: lightgray; /* Голубая рамка */
+      padding: 20px;
+      width: 800px;
+    }
+
+    .box {
+      /* background-color: #E84334; Красные блоки */
+      height: 350px;
+      border: 5px solid grey;
+    }
+
+    .box.bottom {
+      grid-column: 1 / 3; /* Занимает обе колонки */
+      height: 250px;
+    }
+
+    #inventory {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+    }
+
+    .cell {
+        border: 5px solid grey;
+    }
+  </style>
 </head>
 <body>
-    <div class="wrapper" x-data="personalInfo">
-        <div class="card">
-            <div class="card-image">
-                <img width="300px" src="assets/page_avatar.jpg">
-            </div>
-            <div class="card-footer">
-                <h1 x-text="fullName"></h1>
-            </div>
-        </div>
-        <div class="a_fl-c a_fl-gap-10">
-            <info-block title="Base" :data="baseInfo"></info-block>
-            <info-block title="Skills" :data="skilsInfo"></info-block>
-        </div>
+  <div class="container">
+    <div class="box"></div>
+    <div id="inventory" class="box">
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>        
     </div>
-    <script type="module" crossorigin src="./src/main.js"></script>
+    <div class="box bottom">
+        <ul>
+            <li>Test 1 skil</li>
+            <li>Another skil</li>
+            <li>Bla bla bla</li>
+            <li></li>
+        </ul>
+    </div>
+  </div>
 </body>
 </html>
