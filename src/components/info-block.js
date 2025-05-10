@@ -43,7 +43,6 @@ export class InfoBlock extends AbstractComponent {
                         + 
                     `</ul> 
                 </div>
-                <hr>
             </div>
         `
     }

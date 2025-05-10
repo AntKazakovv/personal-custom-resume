@@ -7,6 +7,7 @@ alpinejs.data('personalInfo', () => ({
     birthday: [6, 1, 1997],
     race: "Human",
     sex: "Sexy",
+    placeOfResidence: "World",
 
     programming: ["Nodejs", "TypeScript", "Angular", "React", "Functional Programming"],
     admin: ["Linux", "Docker"],
@@ -17,6 +18,7 @@ alpinejs.data('personalInfo', () => ({
             race: this.race,
             sex: this.sex,
             age: this.age,
+            placeOfResidence: this.placeOfResidence,
         });
     },
 
